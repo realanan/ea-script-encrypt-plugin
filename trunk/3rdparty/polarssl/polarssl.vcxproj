@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="aes.c" />
+    <ClCompile Include="arc4.c" />
+    <ClCompile Include="asn1parse.c" />
+    <ClCompile Include="base64.c" />
+    <ClCompile Include="bignum.c" />
+    <ClCompile Include="blowfish.c" />
+    <ClCompile Include="camellia.c" />
+    <ClCompile Include="certs.c" />
+    <ClCompile Include="cipher.c" />
+    <ClCompile Include="cipher_wrap.c" />
+    <ClCompile Include="ctr_drbg.c" />
+    <ClCompile Include="debug.c" />
+    <ClCompile Include="des.c" />
+    <ClCompile Include="dhm.c" />
+    <ClCompile Include="entropy.c" />
+    <ClCompile Include="entropy_poll.c" />
+    <ClCompile Include="error.c" />
+    <ClCompile Include="gcm.c" />
+    <ClCompile Include="havege.c" />
+    <ClCompile Include="md.c" />
+    <ClCompile Include="md2.c" />
+    <ClCompile Include="md4.c" />
+    <ClCompile Include="md5.c" />
+    <ClCompile Include="md_wrap.c" />
+    <ClCompile Include="net.c" />
+    <ClCompile Include="padlock.c" />
+    <ClCompile Include="pem.c" />
+    <ClCompile Include="pkcs11.c" />
+    <ClCompile Include="rsa.c" />
+    <ClCompile Include="sha1.c" />
+    <ClCompile Include="sha2.c" />
+    <ClCompile Include="sha4.c" />
+    <ClCompile Include="ssl_cache.c" />
+    <ClCompile Include="ssl_cli.c" />
+    <ClCompile Include="ssl_srv.c" />
+    <ClCompile Include="ssl_tls.c" />
+    <ClCompile Include="timing.c" />
+    <ClCompile Include="version.c" />
+    <ClCompile Include="x509parse.c" />
+    <ClCompile Include="xtea.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="aes.h" />
+    <ClInclude Include="arc4.h" />
+    <ClInclude Include="asn1.h" />
+    <ClInclude Include="base64.h" />
+    <ClInclude Include="bignum.h" />
+    <ClInclude Include="blowfish.h" />
+    <ClInclude Include="bn_mul.h" />
+    <ClInclude Include="camellia.h" />
+    <ClInclude Include="certs.h" />
+    <ClInclude Include="cipher.h" />
+    <ClInclude Include="cipher_wrap.h" />
+    <ClInclude Include="config.h" />
+    <ClInclude Include="ctr_drbg.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="des.h" />
+    <ClInclude Include="dhm.h" />
+    <ClInclude Include="entropy.h" />
+    <ClInclude Include="entropy_poll.h" />
+    <ClInclude Include="error.h" />
+    <ClInclude Include="gcm.h" />
+    <ClInclude Include="havege.h" />
+    <ClInclude Include="md.h" />
+    <ClInclude Include="md2.h" />
+    <ClInclude Include="md4.h" />
+    <ClInclude Include="md5.h" />
+    <ClInclude Include="md_wrap.h" />
+    <ClInclude Include="net.h" />
+    <ClInclude Include="openssl.h" />
+    <ClInclude Include="padlock.h" />
+    <ClInclude Include="pem.h" />
+    <ClInclude Include="pkcs11.h" />
+    <ClInclude Include="rsa.h" />
+    <ClInclude Include="sha1.h" />
+    <ClInclude Include="sha2.h" />
+    <ClInclude Include="sha4.h" />
+    <ClInclude Include="ssl.h" />
+    <ClInclude Include="ssl_cache.h" />
+    <ClInclude Include="timing.h" />
+    <ClInclude Include="version.h" />
+    <ClInclude Include="x509.h" />
+    <ClInclude Include="xtea.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0A918EBA-51C4-4244-BCC4-F138E42316EC}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>polarssl</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>NotSet</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>..</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <OmitFramePointers>true</OmitFramePointers>
+      <EnableFiberSafeOptimizations>true</EnableFiberSafeOptimizations>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>..</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
