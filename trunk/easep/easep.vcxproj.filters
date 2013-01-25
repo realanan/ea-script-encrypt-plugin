@@ -24,6 +24,12 @@
     <ClInclude Include="defines.h">
       <Filter>头文件</Filter>
     </ClInclude>
+    <ClInclude Include="hookfunc.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="inlinehook.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.c">
@@ -33,6 +39,12 @@
       <Filter>源文件</Filter>
     </ClCompile>
     <ClCompile Include="dllmain.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="hookfunc.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="inlinehook.c">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
