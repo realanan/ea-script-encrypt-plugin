@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "eathena/plugin.h"
 #include "hookfunc.h"
+#include "decrypt.h"
 
 EASEP_EXPORT PLUGIN_INFO =
 {
@@ -25,6 +26,22 @@ EASEP_EXPORT PLUGIN_EVENTS_TABLE =
 
 EASEP_EXPORT void plugin_init()
 {
+	char key[100] = { 0 };
+	int keypos = 0;
+	int ch;
+
+	printf("[EASEP] Enter the password to decrypt the files: ");
+	while (ch = _getch())
+	{
+		if (ch == 13) break;
+		if (ch == 8 && keypos > 0)
+			key[--keypos] = '\0';
+		else if (keypos < sizeof(key))
+			key[keypos++] = ch;
+	}
+	printf("\n");
+
+	DECRYPT_SetKey(key);
 	HF_Init();
 }
 

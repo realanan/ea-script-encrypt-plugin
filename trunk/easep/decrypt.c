@@ -31,7 +31,7 @@ BOOL DECRYPT_Check(LPCWSTR lpFileName)
 		return FALSE;
 	}
 	fclose(fp);
-	return strcmp(line, "[EASEP]") == 0;
+	return strcmp(line, "[EASEP]\n") == 0;
 }
 
 PDECRYPT_DATA DECRYPT_Open(LPCWSTR lpFileName)
@@ -111,10 +111,13 @@ DWORD DECRYPT_Seek(PDECRYPT_DATA pdd, LONG move, DWORD method)
 	case FILE_END:
 		pos = pdd->dwSize;
 		break;
+	default:
+		pos = pdd->dwPos;
+		break;
 	}
 	pos += move;
 	if (pos < 0) pos = 0;
-	if (pos > pdd->dwSize) pos = pdd->dwSize;
+	if (pos > (LONG)pdd->dwSize) pos = (LONG)pdd->dwSize;
 	pdd->dwPos = (DWORD)pos;
 	return pdd->dwPos;
 }
