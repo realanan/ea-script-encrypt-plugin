@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "easep", "easep\easep.vcxproj", "{2105E1AC-1F86-4FE5-9B86-5476DCBE9698}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "polarssl", "3rdparty\polarssl\polarssl.vcxproj", "{0A918EBA-51C4-4244-BCC4-F138E42316EC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2105E1AC-1F86-4FE5-9B86-5476DCBE9698}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2105E1AC-1F86-4FE5-9B86-5476DCBE9698}.Debug|Win32.Build.0 = Debug|Win32
+		{2105E1AC-1F86-4FE5-9B86-5476DCBE9698}.Release|Win32.ActiveCfg = Release|Win32
+		{2105E1AC-1F86-4FE5-9B86-5476DCBE9698}.Release|Win32.Build.0 = Release|Win32
+		{0A918EBA-51C4-4244-BCC4-F138E42316EC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0A918EBA-51C4-4244-BCC4-F138E42316EC}.Debug|Win32.Build.0 = Debug|Win32
+		{0A918EBA-51C4-4244-BCC4-F138E42316EC}.Release|Win32.ActiveCfg = Release|Win32
+		{0A918EBA-51C4-4244-BCC4-F138E42316EC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
